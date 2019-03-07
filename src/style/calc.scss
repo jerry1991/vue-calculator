@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+.calc-container {
+  height: 340px;
+  width: 370px;
+  background-color: #5d6871;
+  border-radius: 6px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  .calc-hd {
+    height: 40px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 41px;
+      left: 5px;
+      right: 5px;
+      height: 15px;
+      background-color: #4c5360;
+      border: 1px solid #3d4550;
+    }
+
+    input {
+      height: 40px;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 0 4px #333 inset;
+      padding-left: 10px;
+      box-sizing: border-box;
+      font-size: 20px;
+      letter-spacing:2px;
+    }
+  }
+
+  .calc-bd {
+    padding-top: 35px;
+
+    button {
+      width: 80px;
+      height: 30px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      color: #fff;
+      background: linear-gradient(to bottom, #3a75c6, #244276);
+      border: 1px solid #292d33;
+      font-size: 14px;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+
+
+      &.btn0, &.btn1, &.btn4, &.btn5, &.btn6 {
+        background: linear-gradient(to bottom, #46638f, #253853);
+      }
+
+      &.btn2, &.btn3 {
+        background: linear-gradient(to bottom, #545c68, #323a47);
+      }
+
+      &.btn7, &.btn11, &.btn15, &.btn19 {
+        background: linear-gradient(to bottom, #8b5e43, #543728);
+      }
+
+      &.btn23 {
+        background: linear-gradient(to bottom, #f3933d, #bb5f2b);
+      }
+    }
+  }
+
+
+}
